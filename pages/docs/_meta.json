@@ -1,22 +1,18 @@
 {
-  "index": {
-    "type": "page",
-    "display": "hidden"
+  "index": "ActionX - Introduction",
+  "-- get-started": {
+    "type": "separator",
+    "title": "Get Started"
   },
-  "v1.0.1": {
-    "type": "page",
-    "display": "hidden"
+  "prerequisites": "Prerequisites",
+  "-- Policies": {
+    "type": "separator",
+    "title": "Policies"
   },
-  "v1.0.2": {
-    "type": "page",
-    "display": "hidden"
-  },
-  "v1.0.3": {
-    "type": "page",
-    "display": "hidden"
-  },
-  "latest": {
-    "type": "page",
-    "display": "hidden"
-  }
+  "privacy-policy": "Privacy Policy",
+  "terms-of-service": "Terms of Service"
+
+
+
+
 }
