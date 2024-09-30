@@ -5,6 +5,7 @@
     "title": "Get Started"
   },
   "prerequisites": "Prerequisites",
+  "buckets": "Buckets",
   "-- Policies": {
     "type": "separator",
     "title": "Policies"

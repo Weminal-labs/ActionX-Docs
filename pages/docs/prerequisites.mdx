@@ -1,108 +1,36 @@
-import { Callout, Cards, Steps } from 'nextra/components';
+import { Cards } from 'nextra/components'
+import ChromeStoreIcon from '../../components/icons/chrome-store-icon'
 
-# Installation
+# Prerequisites
 
-**Nextra Perosnal Website Template** is a custom theme that includes almost everything you need to build a modern **documentation** and **blog** website. It includes a top navigation bar, a search bar, a pages sidebar, a TOC sidebar, and other built-in components.
+## OWallet
 
-## Quick Start from Template
+**OWallet** is a non-custodial wallet compatible with **EUENO** and required for the process of file storage, data encryption, and data sharing on **EUENO**.
 
-### Deploy to Vercel
+**EUENO** will support a wider range of non-custodial wallets in the future.
 
-You can start by creating your own Nextra site and deploying to Vercel by clicking the link:
+<br/>
 
-<a
-  className="mt-3 inline-flex"
-  target="_blank"
-  href="https://vercel.com/new/clone?s=https%3A%2F%2Fgithub.com%2Fnamnguyenthanhwork%2Fnextra-personal-website-template&showOptionalTeamCreation=false"
->
-  ![](https://vercel.com/button)
-</a>
+<Cards.Card
+  icon={<ChromeStoreIcon/>}
+  title="ActionX Extension"
+  href="https://chromewebstore.google.com/detail/actionx/bopjneenkbedcakaheonfocnagfdpoeo"
+  arrow
+/>
 
-Vercel will fork the [Nextra Perosnal Website Template](https://github.com/namnguyenthanhwork/nextra-personal-website-template) and deploy the site for you. Once done, every commit in the repository will be deployed automatically.
+<p align="center">Download ActionX extension from Chrome</p>
 
-### Fork the Template
+**Here are steps to connect your wallet to EUENO:**
 
-You can also manually fork the [template repository](https://github.com/namnguyenthanhwork/nextra-personal-website-template).
+**Step 1:** There are options to connect your wallet:
 
-## Start as New Project
+- **Option 1:** Click on the **Connect Wallet** button on the top right corner of the page.
+- **Option 2:** Click on the **Connect Wallet** button on the top right corner of the page.
 
-<Steps>
-### Install
+![Blog theme](https://docs.eueno.io/~gitbook/image?url=https%3A%2F%2F3701722239-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FQRsOb8nybzYU151xljhX%252Fuploads%252FIHncIwvIU56idQVMbXMf%252FScreen%2520Shot%25202022-11-25%2520at%252014.13.30.png%3Falt%3Dmedia%26token%3D1ab8f0e7-7109-4ad7-b7f3-6797ca7ec625&width=768&dpr=4&quality=100&sign=2050fe53&sv=1)
 
-To create a Nextra Perosnal Template site manually, you have to install **Next.js**, **React**, **Nextra V3 alpha**, and **Nextra Docs Theme V3 alpha**. In your project directory, run the following command to install the dependencies:
 
-```sh npm2yarn
-npm i next react react-dom nextra@alpha nextra-theme-docs@alpha
-```
+**Step 2:** Click **Connect Wallet** at the top right corner of the page and **Approve** the permission request. You are good to go now.
 
-<Callout>
-  If you already have Next.js installed in your project, you only need to install `nextra` and `nextra-theme-docs` as
-  the add-ons.
-</Callout>
+![Blog theme](https://docs.eueno.io/~gitbook/image?url=https%3A%2F%2F3701722239-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FQRsOb8nybzYU151xljhX%252Fuploads%252FIHncIwvIU56idQVMbXMf%252FScreen%2520Shot%25202022-11-25%2520at%252014.13.30.png%3Falt%3Dmedia%26token%3D1ab8f0e7-7109-4ad7-b7f3-6797ca7ec625&width=768&dpr=4&quality=100&sign=2050fe53&sv=1)
 
-Add the following scripts in `package.json`:
-
-```json filename="package.json"
-"scripts": {
-  "dev": "next",
-  "build": "next build",
-  "start": "next start"
-},
-```
-
-You can either start the server with, for example if you use npm, `npm run dev`, which will run in development mode or `npm run build && npm run start` for production mode.
-
-<Callout>
-  If you're not familiar with Next.js, note that development mode is significantly slower since Next.js compiles every
-  page you navigate to.
-</Callout>
-
-### Add Next.js Config
-
-Create the following `next.config.js` file in your project’s root directory:
-
-```js filename="next.config.js"
-const withNextra = require('nextra')({
-  theme: 'nextra-theme-docs',
-  themeConfig: './theme.config.jsx',
-});
-
-module.exports = withNextra();
-
-// If you have other Next.js configurations, you can pass them as the parameter:
-// module.exports = withNextra({ /* other next.js config */ })
-```
-
-With the above configuration, Nextra can handle Markdown files in your Next.js project, with the specified theme. Other Nextra configurations can be found in [Guide](https://nextra.site/docs/guide).
-
-### Create Docs Theme Config
-
-Lastly, create the corresponding `theme.config.jsx` file in your project’s root directory. This will be used to configure the Nextra Docs theme:
-
-```jsx filename="theme.config.jsx"
-export default {
-  logo: <span>My Nextra Website Template</span>,
-  project: {
-    link: 'https://github.com/namnguyenthanhwork/nextra-personal-website-template',
-  },
-  // ... other theme options
-};
-```
-
-Full theme configurations can be found [here](/en/docs/doc-theme/theme-configuration).
-
-### Ready to Go!
-
-Now, you can create your first MDX page as `pages/index.mdx`:
-
-```mdx filename="pages/index.mdx"
-# Welcome to Nextra
-
-Hello, world!
-```
-
-And run the `next` or `next dev` command specified in `package.json`to start developing the project! 🎉
-
-</Steps>
-
-Next, check out the next section to learn about organizing the documentation structure and configuring the website theme:
